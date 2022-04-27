@@ -1,5 +1,3 @@
-import React from "react";
-import "./App.css";
 import { Header, SearchForm, Weather } from "./components";
 
 function App() {

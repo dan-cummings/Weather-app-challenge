@@ -1,3 +1,11 @@
+import "./Header.css";
+
 export const Header = () => {
-  return <div></div>;
+  const title = "Weather";
+
+  return (
+    <header>
+      <h1>{title}</h1>
+    </header>
+  );
 };
