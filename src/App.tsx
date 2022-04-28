@@ -1,13 +1,24 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Header, SearchForm, Weather } from "./components";
+import { WeatherResponse } from "./interfaces/weather";
+
+import { getWeather } from "./services/weather";
 
 function App() {
   const [city, setCity] = useState("");
+  const [weather, setWeather] = useState<WeatherResponse | undefined>();
+
+  useEffect(() => {
+    if (city) {
+      getWeather(city).then((data) => setWeather(data));
+    }
+  }, [city]);
+
   return (
     <div>
       <Header></Header>
       <SearchForm onSubmit={setCity}></SearchForm>
-      <Weather city={city}></Weather>
+      {weather && <Weather details={weather}></Weather>}
     </div>
   );
 }
