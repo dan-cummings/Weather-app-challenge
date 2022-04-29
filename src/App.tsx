@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Header, SearchForm, Weather } from "./components";
 import { WeatherResponse } from "./interfaces/weather";
 
-import { getWeather } from "./services/weather";
+import { getWeather } from "./services/weather.service";
 
 function App() {
   const [city, setCity] = useState("");

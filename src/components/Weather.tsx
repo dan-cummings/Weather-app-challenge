@@ -5,14 +5,6 @@ export declare interface WeatherProps {
   details: WeatherResponse;
 }
 
-const toImperialTemp = (value: number): string => {
-  return `${((value - 273.15) * 1.8 + 32).toFixed(1)}°F`;
-};
-
-const toImperialSpeed = (value: number): string => {
-  return `${(value * 2.237).toFixed(1)} mph`;
-};
-
 export const Weather = (props: WeatherProps) => {
   const { details } = props;
 
@@ -41,4 +33,12 @@ export const Weather = (props: WeatherProps) => {
       </div>
     </div>
   );
+};
+
+const toImperialTemp = (value: number): string => {
+  return `${((value - 273.15) * 1.8 + 32).toFixed(1)}°F`;
+};
+
+const toImperialSpeed = (value: number): string => {
+  return `${(value * 2.237).toFixed(1)} mph`;
 };
