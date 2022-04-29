@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 20px;
+  padding: 25px;
 }
 
 .search-form form label {
@@ -23,11 +23,11 @@
 }
 
 .search-form form input {
-  width: 100%;
+  max-width: 100%;
+  margin: 10px 0;
 }
 
 .search-form form button {
   width: 100%;
   background-color: white;
-  border-radius: 6px;
 }

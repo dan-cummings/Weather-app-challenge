@@ -1,3 +1,27 @@
 .weather {
-  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-card {
+  width: 25%;
+  padding: 14px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-card div {
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+.weather-card-header {
+  display: flex;
+  align-items: center;
+}
+
+.weather-card-header img {
+  transform: scale(0.5);
 }
