@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 
-.weather-card div {
+.weather-card > div {
   margin: 8px 0;
   font-weight: bold;
 }
