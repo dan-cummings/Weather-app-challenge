@@ -1,4 +1,4 @@
-import { WeatherResponse } from "../interfaces/weather";
+import { WeatherResponse } from "../../interfaces/weather";
 import "./Weather.css";
 
 export declare interface WeatherProps {

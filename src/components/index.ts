@@ -1,3 +1,3 @@
-export * from "./Header";
-export * from "./Weather";
-export * from "./SearchForm";
+export * from "./header/Header";
+export * from "./weather/Weather";
+export * from "./searchform/SearchForm";
