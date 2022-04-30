@@ -5,6 +5,7 @@
   align-items: center;
   width: 25%;
   margin: 20px auto;
+  min-width: 225px;
 }
 
 .search-form > form {
